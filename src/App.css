@@ -1,0 +1,89 @@
+.App {
+    width: 100vw;
+    height: 100vh;
+}
+
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+.NavBar {
+    width: 100%;
+    height: 140px;
+}
+
+.MainNav {
+    align-items: center center;
+    background-color: #2D2D2D;
+    width: 100%;
+    height: 75px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+}
+
+.Logo {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white; 
+    cursor:pointer;
+}
+
+.SearchBar {
+    /*background-color: teal;*/
+    flex-grow: 1;
+    padding-top:17.5px;
+    padding-bottom:17.5px;    
+}
+
+.Form {
+    border-top-left-radius: 25px !important;
+    border-bottom-left-radius: 25px !important;
+    border-top-right-radius: 25px !important;
+    border-bottom-right-radius: 25px !important;
+    width: 87.5%;
+    height: 100%;    
+    border: #2D2D2D;
+    padding-right: 20px; 
+    padding-left: 20px; 
+}
+
+.Icon {
+    width: 5%;
+    height: 100%;
+    margin-left: 20px;
+}
+
+.IconBtn {
+    height: 100%; 
+    width: 100%;   
+    color:White;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+}
+
+.SubNav {
+    height: 45px; 
+    width: 100%;   
+    background-color:#525050;
+}
+
+.NavCategory {
+    height: 50%;
+    width: 7.5%;
+}
+
+.TextBtn {
+    width: 50px;
+    height: 30px;
+    font-size: xx-small;
+    border: none;
+    cursor:pointer;
+    background-color: Transparent;
+    color:White;
+    margin: 2.5px;
+        
+}
