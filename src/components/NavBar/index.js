@@ -7,8 +7,19 @@ const NavBar = () => {
         // <>
         //     <Nav>
         //         <NavLink to="/">
-
+        //             <h1>LOGO</h1>
         //         </NavLink>
+        //         <NavLink to="/">
+        //             <h1>SearchBar</h1>
+        //         </NavLink>
+        //         <NavLink to="/">
+        //             <h1>account</h1>
+        //         </NavLink>
+        //         <NavLink to="/">
+        //             <h1>basket</h1>
+        //         </NavLink>
+
+
         //         <Bars />
         //         <NavMenu>
         //             <NavLink to="/" activeStyle>
