@@ -6,11 +6,11 @@ export const MainNavBar = styled.nav`
     background-color: #2D2D2D;
     height: 75px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 2 calc((100vw - 100px)/2);
     z-index 10;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
 `;
 
 export const NavLink = styled(Link)`
@@ -22,6 +22,7 @@ export const NavLink = styled(Link)`
     height: 100%;
     border: none;
     cursor: pointer;
+    font-family: sans-serif;
 
 `;
 
@@ -46,8 +47,8 @@ export const NavMenu = styled.div`
     background-color: #525050;
     allign-items: center;
     justify-content: space-between;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
     
     @media screen and (max-width: 768){
         display: none;
@@ -57,6 +58,7 @@ export const NavMenu = styled.div`
 export const NavBtn = styled.nav`
     display: flex;
     align-items: center;
+    margin: 0 25px;
 `;
 
 export const NavBtnLink = styled(Link)`
@@ -66,6 +68,9 @@ export const NavBtnLink = styled(Link)`
 
 export const NavSearch = styled.nav`
     display: flex;
-    align-items: center;
+    flex-grow: 1;
+    align-items: start;
 `;
+
+
 

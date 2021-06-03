@@ -1,13 +1,13 @@
 import React from 'react';
 import{RiAccountCircleLine} from "react-icons/ri";
 import{RiShoppingBasketLine} from "react-icons/ri";
-import { MainNavBar, NavLink, NavSearch, Collapseable, NavBtn, NavMenu,NavBtnLink, NavSearch } from './NavigationBarElem';
+import { MainNavBar, NavLink, Collapseable, NavBtn, NavMenu, NavBtnLink, NavSearch } from './NavigationBarElem';
 
 const NavigationBar = () => {
     return (
         <>
             <MainNavBar>
-                <NavLink to="/">
+                <NavLink to="/home">
                     <h1>LOGO</h1>
                 </NavLink>
                 <NavSearch>
@@ -15,12 +15,12 @@ const NavigationBar = () => {
                 </NavSearch>                   
                 <NavBtn>
                     <NavBtnLink to="/account">
-                        <h1><RiAccountCircleLine/></h1>
+                        <h1><RiAccountCircleLine size={28} /></h1>
                     </NavBtnLink>
                 </NavBtn>
                 <NavBtn>
                     <NavBtnLink to="/basket">
-                        <h1><RiShoppingBasketLine/></h1>
+                        <h1><RiShoppingBasketLine size={28} /></h1>
                     </NavBtnLink>
                 </NavBtn>
                 <Collapseable>
@@ -30,10 +30,10 @@ const NavigationBar = () => {
             </MainNavBar>
             <NavMenu>
                 <NavLink to="/dogs">
-                    <h1>Dogs</h1>
+                    Dog
                 </NavLink>
                 <NavLink to="/cat">
-                    <h1>Cats</h1>
+                    Cats
                 </NavLink>
             </NavMenu>
         </>
