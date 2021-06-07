@@ -2,6 +2,8 @@ import React, { useState, useRef } from 'react';
 import { Form, Button, Input } from './SearchBarElem';
 import {AiOutlineSearch} from 'react-icons/ai'
 
+/* Todo Drop Down elements: Need Server Up and running*/
+
 const SearchBar = () => {
     
     const [input, setInput] = useState("");

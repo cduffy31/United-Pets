@@ -4,6 +4,8 @@ import{RiShoppingBasketLine} from "react-icons/ri";
 import { MainNavBar, NavLink, Collapseable, NavBtn, NavMenu, NavBtnLink, NavSearch } from './NavigationBarElem';
 import SearchBar from '../SearchBar/SearchBarComp'
 
+/* Todo Drop Down elements: Need Server Up and running*/
+
 const NavigationBar = () => {
     return (
         <>
