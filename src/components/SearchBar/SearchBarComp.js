@@ -1,21 +1,25 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
+import { Form, Button, Input } from './SearchBarElem';
+import {AiOutlineSearch} from 'react-icons/ai'
+
 const SearchBar = () => {
+    
     const [input, setInput] = useState("");
     const [barOpened, setBarOpened] = useState(false);
     const formRef = useRef();
     const inputFocus = useRef();
 
-    const onFormSubmit = (e) => {
+    const onFormSubmit = (event) => {
         // When form submited, clear input, close the searchbar and do something with input
-        e.preventDefault();
+        event.preventDefault();
         setInput("");
         setBarOpened(false);
         // After form submit, do what you want with the input value
         console.log(`Form was submited with input: ${input}`);
     };
-
+    
     return(
-        <>
+        <> 
             <Form
                 barOpened={barOpened}
                 onClick={() => {
@@ -37,10 +41,10 @@ const SearchBar = () => {
                 ref={formRef}
             >
                 <Button type="submit" barOpened={barOpened}>
-                    icon
+                    <AiOutlineSearch size={28} />
                 </Button>
                 <Input
-                    onChange={(e) => setInput(e.target.value)}
+                    onChange={(event) => setInput(event.target.value)}
                     ref={inputFocus}
                     value={input}
                     barOpened={barOpened}

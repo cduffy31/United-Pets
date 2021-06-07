@@ -2,6 +2,7 @@ import React from 'react';
 import{RiAccountCircleLine} from "react-icons/ri";
 import{RiShoppingBasketLine} from "react-icons/ri";
 import { MainNavBar, NavLink, Collapseable, NavBtn, NavMenu, NavBtnLink, NavSearch } from './NavigationBarElem';
+import SearchBar from '../SearchBar/SearchBarComp'
 
 const NavigationBar = () => {
     return (
@@ -11,7 +12,7 @@ const NavigationBar = () => {
                     <h1>LOGO</h1>
                 </NavLink>
                 <NavSearch>
-                    
+                    <SearchBar/> 
                 </NavSearch>                   
                 <NavBtn>
                     <NavBtnLink to="/account">
