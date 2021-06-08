@@ -1,13 +1,13 @@
  
 import './App.css';
 import React from 'react';
-import NavigationBar from './components/NavBar/NavigationBar.js';
 import { BrowserRouter } from 'react-router-dom';
+import { ContainerFoot } from './components/Footer/FooterContainer';
 
 function App() {
   return (
     <BrowserRouter>
-      <NavigationBar/>
+      <ContainerFoot/>
     </BrowserRouter>
 
   );

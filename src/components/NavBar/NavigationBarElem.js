@@ -62,7 +62,6 @@ export const NavBtn = styled.nav`
 `;
 
 export const NavBtnLink = styled(Link)`
-    color: #fff;
     background-colour: Transparent;
 `;
 
