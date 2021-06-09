@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
 
 /* Encapsulates Wrapper */
 export const Container = styled.div`
-    padding: 75px 250px;
+    padding: 45px 250px;
     background-color: #EEEEEE;
 `
 
@@ -63,4 +63,7 @@ export const FootBtnLink = styled(Link)`
         color: #5A9DDA;
         transition: 200ms ease-in;
     }
-`;
+`
+
+
+
