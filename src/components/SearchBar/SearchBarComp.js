@@ -50,7 +50,7 @@ const SearchBar = () => {
                     ref={inputFocus}
                     value={input}
                     barOpened={barOpened}
-                    placeholder="Search for a movie..."
+                    placeholder="Search..."
                 />
             </Form>
         </>
