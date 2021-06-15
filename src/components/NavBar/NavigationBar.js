@@ -1,8 +1,9 @@
 import React from 'react';
 import{RiAccountCircleLine} from "react-icons/ri";
 import{RiShoppingBasketLine} from "react-icons/ri";
-import { MainNavBar, NavLink, Collapseable, NavBtn, NavMenu, NavBtnLink, NavSearch } from './NavigationBarElem';
+import { MainNavBar, NavLink, Collapseable, NavBtn, NavMenu, NavBtnLink, NavSearch, HomeImg } from './NavigationBarElem';
 import SearchBar from '../SearchBar/SearchBarComp'
+import petpacresizerecolor from './Logo/petpacresizerecolor.png'; 
 
 /* Todo Drop Down elements: Need Server Up and running*/
 
@@ -10,9 +11,11 @@ const NavigationBar = () => {
     return (
         <>
             <MainNavBar>
-                <NavLink to="/home">
-                    <h1>LOGO</h1>
-                </NavLink>
+                <NavBtn>
+                    <NavLink to="/home">
+                            <HomeImg src={petpacresizerecolor}/>
+                    </NavLink>
+                </NavBtn>
                 <NavSearch>
                     <SearchBar/> 
                 </NavSearch>                   
@@ -28,8 +31,7 @@ const NavigationBar = () => {
                 </NavBtn>
                 <Collapseable>
                     <h1>Categories</h1>
-                </Collapseable>
-                
+                </Collapseable>  
             </MainNavBar>
             <NavMenu>
                 <NavLink to="/dogs">

@@ -3,7 +3,7 @@ import {NavLink as Link} from 'react-router-dom'
 import {FaBars} from 'react-icons/fa';
 
 export const MainNavBar = styled.nav`
-    background-color: #2D2D2D;
+    background-color: #4a4f54;
     height: 75px;
     display: flex;
     justify-content: center;
@@ -23,7 +23,6 @@ export const NavLink = styled(Link)`
     border: none;
     cursor: pointer;
     font-family: sans-serif;
-
 `;
 
 export const Collapseable = styled(FaBars)`
@@ -44,7 +43,7 @@ export const Collapseable = styled(FaBars)`
 export const NavMenu = styled.div`
     display: felx;
     height: 65px;
-    background-color: #525050;
+    background-color: #d9d8d6;
     allign-items: center;
     justify-content: space-between;
     padding-left: 40px;
@@ -62,7 +61,8 @@ export const NavBtn = styled.nav`
 `;
 
 export const NavBtnLink = styled(Link)`
-    background-colour: Transparent;
+    background-colour: transparent;
+    color: #d9d8d6;
 `;
 
 export const NavSearch = styled.nav`
@@ -71,5 +71,9 @@ export const NavSearch = styled.nav`
     align-items: start;
 `;
 
-
+export const HomeImg = styled.img`
+    height: 50px;
+    width: 150px;
+    padding: 5px 5px;
+`;
 

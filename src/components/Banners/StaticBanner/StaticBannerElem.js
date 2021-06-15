@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link, NavLink } from 'react-router-dom';
 
 export const Container = styled.div`
-    padding: 0px 140px;
+    
     background-color: none;
 `;
 
@@ -17,11 +17,12 @@ export const Wrapper = styled.div`
 
 export const BannerImg = styled.img`
     height: 700px;
-    width: 1600px;
+    width: 1200px;
+    padding: 20px 140px;
 `;
 
 export const BannerTitle = styled.div`
-    background-color: white;
+    background-color: #d9d8d6;
     display: flex;
     height: 100px;
     justify-content: center;
@@ -50,7 +51,7 @@ export const BannerLink = styled(Link)`
 `
 
 export const BannerBtn = styled(NavLink)`
-    background-color: white;
+    background-color: #d9d8d6;
     text-decoration: none;
     color: black;
     border: none;
@@ -69,7 +70,7 @@ export const BannerBtn = styled(NavLink)`
 
     &:hover {
        color: white;
-       background-color: black;
+       background-color: #4a4f54;
        text-decoration: none;
     }
 `;

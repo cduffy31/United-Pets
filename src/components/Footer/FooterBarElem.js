@@ -4,7 +4,7 @@ import {NavLink as Link} from 'react-router-dom'
 /*footer bar only elements*/
 export const FooterBarContainer = styled.div`
     height: 65px;
-    background-color: #DDDDDD;
+    background-color: #d9d8d6;
 `;
 
 export const FootBarWrapper = styled.div`

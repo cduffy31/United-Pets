@@ -1,13 +1,13 @@
 import React from 'react';
 import { Container, Wrapper, BannerBtn, BannerImg, BannerTitle, BannerLink } from './StaticBannerElem';
-import dogs from './../TestImages/dogs.png';
+import catsdogs from './../TestImages/catsdogs.png';
 
 const StaticBanner = () => {
     return (
         <Container>
             <Wrapper>
                 <BannerLink to='/BannerLink'>
-                    <BannerImg src ={dogs}/>
+                    <BannerImg src ={catsdogs}/>
                     <BannerTitle>Banner Title</BannerTitle>
                     <BannerBtn to='/BannerLink'>Banner Button</BannerBtn>
                 </BannerLink>

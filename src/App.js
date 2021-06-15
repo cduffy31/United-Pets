@@ -12,7 +12,7 @@ function App() {
     <BrowserRouter>
       <NavigationBar class='Nav'/>
       <StaticBanner/>
-      <h4>HELLO</h4>
+      <h4>Put Product here</h4>
       <ContainerFoot class='Footer'/>
     </BrowserRouter>
   );
