@@ -1,18 +1,23 @@
 import React from 'react';
 import{RiAccountCircleLine} from "react-icons/ri";
 import{RiShoppingBasketLine} from "react-icons/ri";
-import { MainNavBar, NavLink, Collapseable, NavBtn, NavMenu, NavBtnLink, NavSearch } from './NavigationBarElem';
+import { MainNavBar, NavItemLink, Collapseable, NavBtn, NavMenu, NavBtnLink, NavSearch, DropDown, NavItem } from './NavigationBarElem';
 import SearchBar from '../SearchBar/SearchBarComp'
 
-/* Todo Drop Down elements: Need Server Up and running*/
+/* Todo Drop Down elements: Need Server Up and running
+    Need Navigation Item component
+*/
+
+
+
 
 const NavigationBar = () => {
     return (
         <>
             <MainNavBar>
-                <NavLink to="/home">
+                <NavItemLink to="/home">
                     <h1>LOGO</h1>
-                </NavLink>
+                </NavItemLink>
                 <NavSearch>
                     <SearchBar/> 
                 </NavSearch>                   
@@ -32,12 +37,25 @@ const NavigationBar = () => {
                 
             </MainNavBar>
             <NavMenu>
-                <NavLink to="/dogs">
-                    Dog
-                </NavLink>
-                <NavLink to="/cat">
-                    Cats
-                </NavLink>
+
+                <NavItem>
+                    <NavItemLink to="/dogs">
+                        Dog
+                        <DropDown>
+                            Hello
+                        </DropDown>
+                    </NavItemLink>
+                </NavItem>
+                
+                <NavItem>
+                    <NavItemLink to="/cat">
+                        Cats
+                        <DropDown>
+                            Hello
+                        </DropDown>
+                    </NavItemLink>
+                </NavItem> 
+
             </NavMenu>
         </>
     );

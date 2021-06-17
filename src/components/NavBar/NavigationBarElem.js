@@ -13,18 +13,6 @@ export const MainNavBar = styled.nav`
     padding-right: 25px;
 `;
 
-export const NavLink = styled(Link)`
-    color: #fff;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    padding: 0 lrem;
-    height: 100%;
-    border: none;
-    cursor: pointer;
-    font-family: sans-serif;
-
-`;
 
 export const Collapseable = styled(FaBars)`
     display: none;
@@ -59,11 +47,19 @@ export const NavBtn = styled.nav`
     display: flex;
     align-items: center;
     margin: 0 25px;
+
+    
 `;
 
 export const NavBtnLink = styled(Link)`
     color: #fff;
     background-colour: Transparent;
+    
+    :hover {
+        cursor: pointer;
+        opacity: 0.6;
+    }
+
 `;
 
 export const NavSearch = styled.nav`
@@ -71,6 +67,46 @@ export const NavSearch = styled.nav`
     flex-grow: 1;
     align-items: start;
 `;
+
+export const DropDown = styled.div`
+    background-color: black;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+`
+
+export const NavItem = styled.div`
+    height: 100%;
+    position: relative;
+    
+    :hover ${DropDown} {
+        display: block;
+    }
+`
+
+export const NavItemLink = styled(Link)`
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 lrem;
+    height: 100%;
+    border: none;
+    font-family: sans-serif;
+    
+    :hover{
+        cursor: pointer;
+        opacity: 0.6;
+    }
+
+    > img {
+        margin: auto;
+    }
+
+`; 
 
 
 
