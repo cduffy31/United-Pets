@@ -35,21 +35,15 @@ export const NavMenu = styled.div`
     background-color: #525050;
     allign-items: center;
     justify-content: space-between;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 200px;
+    padding-right: 200px;
     
     @media screen and (max-width: 768){
         display: none;
     }
 `;
 
-export const NavBtn = styled.nav`
-    display: flex;
-    align-items: center;
-    margin: 0 25px;
 
-    
-`;
 
 export const NavBtnLink = styled(Link)`
     color: #fff;
@@ -68,6 +62,36 @@ export const NavSearch = styled.nav`
     align-items: start;
 `;
 
+export const DropTitle = styled.div`
+    font-size: 12px;
+    font-weight: bold;
+    color: #666666;
+    margin-bottom: 14px;
+`
+export const DropLink = styled(Link)`
+    font-size: 12px;
+    color: #666666;
+    margin-bottom: 14px;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+        cursor: pointer;
+        opacity: 0.6;
+    }
+`
+export const DropRow = styled.div`
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(230px,1fr));
+    grid-gap: 10px;
+`
+
+export const DropColumn = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    text-align: left;
+`
+
 export const DropDown = styled.div`
     background-color: black;
     border-bottom-left-radius: 6px;
@@ -76,16 +100,20 @@ export const DropDown = styled.div`
     position: absolute;
     left: 0;
     top: 100%;
-`
+`;
+
 
 export const NavItem = styled.div`
     height: 100%;
     position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 25px;
     
     :hover ${DropDown} {
         display: block;
     }
-`
+`;
 
 export const NavItemLink = styled(Link)`
     color: #fff;
