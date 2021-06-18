@@ -22,7 +22,7 @@ import SearchBar from '../SearchBar/SearchBarComp'
 
 const NavigationBar = () => {
 
-    const Animals = ['Dogs', 'Cats', 'Small Pets', 'Birds', 'Horses', 'Reptiles']
+    const Animals = ['Dogs', 'Cats', 'Small Pets', 'Birds', 'Horses', 'Reptiles', 'Brands', 'Special Offers']
 
     const Categories = ['Food','Toys','Beds', 'Acessories'];
     
