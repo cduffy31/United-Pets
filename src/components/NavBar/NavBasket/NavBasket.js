@@ -1,56 +1,46 @@
 import React from 'react';
-import {ImBin} from 'react-icons/im';
+import Whiskas from './TempImageProduct/Whiskas.png';
+import { Container } from './NavBasketElem';
+import BasketCard from './BasketCard';
 
-const BasketCard = (props) => {
-    const image = props.image;
-    const price = props.price;
-    const title = props.title;
-    const animal = props.animal;
-    const category = props.category;
-    const quantity = props.quantity;
-
-    return(
-        <BasketItem>
-            <ItemRow>
-                <ItemImage src = {image}/>
-                <ItemColumn>
-                    <ItemPrice>{price}</ItemPrice>
-                    <ItemTitle>{title}</ItemTitle>
-                    <ItemSubrow>
-                        <ItemAnimal>{animal}</ItemAnimal>
-                        <ItemCategory>{category}</ItemCategory>
-                        <ItemQuantity>{quantity}</ItemQuantity>
-                    </ItemSubrow>
-                    <RemoveItem><ImBin size={14}/></RemoveItem>
-                </ItemColumn>
-            </ItemRow>
-        </BasketItem>
-    );
-}
 
 const NavBasket = () => {
     /* 
     const customerItems = Callans code
 
     todo functions:
-    remove item
+    get items
+    remove items
     
-    */
- 
-    return(
-            <Container>
                 <BasketTopRow>
                     <BasketTitle></BasketTitle>
                     <NumItems/>
                 </BasketTopRow>
-                <Wrapper>
+                <BasketCardWrapper>
                     <BasketCard/> 
-                </Wrapper>
+                </BasketCardWrapper>
                 <BasketSubTotal></BasketSubTotal>
                 <BasketBottomRow>
                     <VeiwBasketBtn></VeiwBasketBtn>
                     <CheckoutBasketBtn></CheckoutBasketBtn>
                 </BasketBottomRow>
+
+                
+
+    */
+
+    
+ 
+    return(
+            <Container>
+                <BasketCard 
+                    image={Whiskas} 
+                    price={100} 
+                    title={'WHISKAS'} 
+                    animal={'Cats'} 
+                    category={'Food'} 
+                    quantity={1}
+                />
             </Container>   
     );
 }
