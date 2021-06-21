@@ -1,7 +1,8 @@
 import React from 'react';
 import Whiskas from './TempImageProduct/Whiskas.png';
-import { Container } from './NavBasketElem';
+import { Container, Header, BagTitle, BagText, ExitBtn } from './NavBasketElem';
 import BasketCard from './BasketCard';
+import {ImCross} from 'react-icons/im';
 
 
 const NavBasket = () => {
@@ -30,9 +31,14 @@ const NavBasket = () => {
     */
 
     
- 
+    const NumItems = 3;
     return(
             <Container>
+                <Header>
+                    <BagTitle>My Bag,</BagTitle>
+                    <BagText>{NumItems+' items'}</BagText>
+                    <ExitBtn><ImCross size={24}/></ExitBtn>
+                </Header>
                 <BasketCard 
                     image={Whiskas} 
                     price={100} 
