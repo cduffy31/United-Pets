@@ -36,7 +36,7 @@ const NavBasket = () => {
                 <BasketCard 
                     image={Whiskas} 
                     price={100} 
-                    title={'WHISKAS'} 
+                    title={'WHISKAS: 1+ years variety cat food kdee'} 
                     animal={'Cats'} 
                     category={'Food'} 
                     quantity={1}

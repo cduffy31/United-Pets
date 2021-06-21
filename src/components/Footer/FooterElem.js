@@ -53,7 +53,7 @@ export const Row = styled.div`
     }
 `
 export const FootBtnLink = styled(Link)`
-    background-colour: Transparent;
+    background-color: Transparent;
     color: #666666;
     margin-bottom: 28px;
     text-declaration: none;
