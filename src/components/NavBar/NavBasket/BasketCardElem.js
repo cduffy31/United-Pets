@@ -6,6 +6,7 @@ export const BasketItemContainer = styled.div`
     height: 150px;
     width: 300px;
     margin: 0 auto;
+    margin-bottom: 10px;
 `;
 
 export const BasketItem = styled(Link)`

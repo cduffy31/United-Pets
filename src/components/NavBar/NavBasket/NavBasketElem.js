@@ -2,18 +2,19 @@
 
 import { unstable_renderSubtreeIntoContainer } from "react-dom";
 import styled from "styled-components";
+import {NavLink as Link} from 'react-router-dom'
 
 export const Container = styled.div`
-    width: 310px;
+    width: 320px;
     height: 100%;
     background-color: #EEEEEE;
-    margin-bottom: 5px;
+    padding-bottom: 5px;
 `;
 
 export const Header = styled.div`
     display: flex;
     flex-direction: row;
-    height: 70;
+    height: 30px;
     width: auto;
     background-color: transparent;
     justify-content: flex-start;
@@ -48,14 +49,58 @@ export const ExitBtn = styled.button`
     }
 `;
 
-export const SubTotalContainer = styled.div`
-
+export const SubContainer = styled.div`
+    display: flex;
+    width 280px;
+    justify-content: space-evenly;
+    background-color: white;
+    color: #666666;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
 `;
 
-export const VeiwBagBtn = styled.button`
-
+export const ItemsContainer = styled.div`
+    width: 100%;
+    max-height: 500px;
+    overflow-y: auto;
 `;
 
-export const CheckoutBagBtn = styled.button`
-   
+export const VeiwBagBtn = styled(Link)`
+    height: 30px;    
+    width: 120px;
+    font-weight: bold;
+    border: none;
+    color: #EEEEEE;
+    background-color: #666666;
+    text-decoration: none;
+    font-size: 16;
+    text-align: center;
+    
+    :hover {
+        cursor: pointer;
+        color: #666666;
+        background-color: #EEEEEE;
+        transition: 200ms ease-in;
+    }
+`;
+
+export const CheckoutBagBtn = styled(Link)`
+    height: 30px;
+    width: 120px;
+    font-weight: bold;
+    border: none;
+    color: #666666;
+    background-color: #EEEEEE;
+    text-decoration: none;
+    font-size: 16;
+    text-align: center;
+    
+    :hover {
+        cursor: pointer;
+        color: #EEEEEE;
+        background-color: #666666;
+        transition: 200ms ease-in;
+    }
 `;
