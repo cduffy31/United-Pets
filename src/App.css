@@ -34,3 +34,11 @@
 
 
 
+.Nav {
+    position: fixed;
+    top: 0;
+}
+
+.Footer{
+    margin-top: -595px;
+}
