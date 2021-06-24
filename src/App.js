@@ -1,14 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import  Products  from './components/products/Products';
 import { commerce } from './lib/commerce';
-import Carousel from './components/Carousels/Carousel.js';
+import Carousel from './components/Carousels/ProductCarousel/Carousel.js';
 import './App.css';
-
 import { BrowserRouter } from 'react-router-dom';
-import Carousel from './components/Carousels/Carousel.js';
-import StaticBanner from './components/Banners/StaticBanner/StaticBanner';
-import { ContainerFoot } from './components/Footer/FooterContainer';
-import NavigationBar from './components/NavBar/NavigationBar';
+
+
 
 const App = () => {
     
@@ -37,11 +34,8 @@ const App = () => {
     }, []);
     console.log(cart);
     return(
-        <BrowserRouter>
-        <Carousel/>
-        <div>
-            <Products products={products} onAddToCart={handleAddToCart}/>
-        </div>
+      <BrowserRouter>
+        <Carousel RecomendedProducts={products} onAddToCart={handleAddToCart}/>
       </BrowserRouter>
     )
 }
